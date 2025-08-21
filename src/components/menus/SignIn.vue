@@ -2,18 +2,19 @@
     <BlankMenu>   
         <div class="logo"></div>
         <div class="main-container center-align">
-            <p>Bem vindo de volta ao <span class="highlight-text">Lume</span>!</p>
+            <p>Bem vindo ao <span class="highlight-text">Lume</span>!</p>
 
             <form action="log-in" class="input-container">
 
                 <div class="data-container center-align">
                     <input type="email" name="text-input" class="text-input" placeholder="Email">
                     <input type="password" name="text-input" class="text-input" placeholder="Senha">
+                    <input type="password" name="text-input" class="text-input" placeholder="Confirmar Senha">
                 </div>
-                <p class="subtext">Não possui uma conta? <span class="link highlight-text" @click="$emit('change-view', 'SignIn')">Cadastrar</span>.</p>
+                <p class="subtext">Já possui uma conta? <span class="link highlight-text" @click="$emit('change-view', 'LogIn')">Entrar</span>.</p>
 
                 <div class="btn-container center-align">
-                    <button type="submit" class="submit-btn">Entrar</button>
+                    <button type="submit" class="submit-btn">Cadastrar</button>
                 </div>
             </form>
         </div>
@@ -71,7 +72,7 @@
     flex-direction: column;
 }
 .data-container{
-    height: 45%;
+    height: 60%;
     justify-content: space-between;
     flex-direction: column;
 }
@@ -91,7 +92,7 @@
 }
 
 .btn-container{
-    height: 70%;
+    height: 45%;
     flex-direction: column;
 }
 
