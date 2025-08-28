@@ -2,11 +2,16 @@
     <div class="bkg"></div>
 </template>
 
+<script setup>
+</script>
+
 <style lang="scss">
 
 
 .bkg{
     position: absolute;
+
+    z-index: -1;
 
     width: 100dvw;
     height: 100dvh;

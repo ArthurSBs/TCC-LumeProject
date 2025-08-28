@@ -113,6 +113,8 @@
         transform: scale(1.05);
         box-shadow: inset 0px 0px 6.9px 4px #ffffff52;
     }
+
+    cursor: pointer;
 }
 
 p{
