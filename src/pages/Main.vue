@@ -7,17 +7,23 @@
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum cupiditate reiciendis qui mollitia. Laborum esse cupiditate possimus magnam, similique exercitationem, consectetur dicta dolor fuga quos sunt repellat ea ex modi.
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nisi molestias. Alias odio consequatur nihil in earum necessitatibus laboriosam, rem enim est, suscipit ut iusto ab dolorem maiores unde eaque.
                 </p>
-                <div class="button-container center-align"><input type="button" value="Iniciar"></div>
+                <div class="button-container center-align"><input type="button" @click="goToLog" value="Iniciar"></div>
             </div>
             <div class="section secondary-section"></div>
         </div>
     </div>
 </template>
 
-<script>
-export default {
-    name: "Main",
+<script setup>
+
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
+function goToLog(){
+    router.push('/loguser')
 }
+
 </script>
 
 <style lang="scss">
