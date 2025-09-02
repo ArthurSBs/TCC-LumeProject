@@ -1,8 +1,5 @@
 <script setup>
 import Background from './components/design-components/Background.vue';
-
-
-
 </script>
 
 <template>

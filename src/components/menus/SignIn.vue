@@ -1,8 +1,8 @@
 <template>
     <BlankMenu>   
-        <div class="logo"></div>
+        <div class="logo link" @click="changeToPage('Main')"></div>
         <div class="main-container center-align">
-            <p>Bem vindo ao <span class="highlight-text">Lume</span>!</p>
+            <p>Bem vindo ao <span class="hl-text-blue">Lume</span>!</p>
 
             <form action="log-in" class="input-container">
 
@@ -11,10 +11,10 @@
                     <input type="password" name="text-input" class="text-input" placeholder="Senha">
                     <input type="password" name="text-input" class="text-input" placeholder="Confirmar Senha">
                 </div>
-                <p class="subtext">Já possui uma conta? <span class="link highlight-text" @click="$emit('change-view', 'LogIn')">Entrar</span>.</p>
+                <p class="subtext">Já possui uma conta? <span class="link hl-text-blue" @click="goToLogin">Entrar</span>.</p>
 
                 <div class="btn-container center-align">
-                    <button type="submit" class="submit-btn">Cadastrar</button>
+                    <button type="submit" class="link submit-btn">Cadastrar</button>
                 </div>
             </form>
         </div>
@@ -22,7 +22,15 @@
 </template>
 
 <script setup>
-    import BlankMenu from '../design-components/BlankMenu.vue';
+import { changeToPage } from '@/router';
+import BlankMenu from '../design-components/BlankMenu.vue';
+import LogIn from './LogIn.vue';
+
+const emit = defineEmits(['change-view'])
+
+const goToLogin = () => {
+    emit('change-view', LogIn)
+}
 </script>
 
 <style scoped lang="scss">
@@ -92,7 +100,7 @@
 }
 
 .btn-container{
-    height: 45%;
+    height: 40%;
     flex-direction: column;
 }
 
@@ -114,8 +122,6 @@
         transform: scale(1.05);
         box-shadow: inset 0px 0px 6.9px 4px #ffffff52;
     }
-
-    cursor: pointer;
 }
 
 p{

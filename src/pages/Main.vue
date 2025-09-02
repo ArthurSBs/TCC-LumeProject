@@ -2,12 +2,12 @@
     <div class="container center-align">
         <div class="main">
             <div class="section main-section center-align">
-                <div class="title-container center-align"><h2>Seja Bem Vindo ao <span class="hl-text">Lume!</span></h2></div>
+                <div class="title-container center-align"><h2>Seja Bem Vindo ao <span class="hl-text-orange">Lume!</span></h2></div>
                 <p class="explanation-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi tenetur temporibus odit dolor debitis sequi vero veniam unde voluptate incidunt quia, deleniti cupiditate nulla deserunt in, quisquam molestias qui!
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsum cupiditate reiciendis qui mollitia. Laborum esse cupiditate possimus magnam, similique exercitationem, consectetur dicta dolor fuga quos sunt repellat ea ex modi.
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, nisi molestias. Alias odio consequatur nihil in earum necessitatibus laboriosam, rem enim est, suscipit ut iusto ab dolorem maiores unde eaque.
                 </p>
-                <div class="button-container center-align"><input type="button" @click="goToLog" value="Iniciar"></div>
+                <div class="button-container center-align"><input type="button" @click="changeToPage('LogUser')" value="Iniciar"></div>
             </div>
             <div class="section secondary-section"></div>
         </div>
@@ -15,14 +15,8 @@
 </template>
 
 <script setup>
+import { changeToPage } from '@/router';
 
-import { useRouter } from 'vue-router';
-
-const router = useRouter();
-
-function goToLog(){
-    router.push('/loguser')
-}
 
 </script>
 
