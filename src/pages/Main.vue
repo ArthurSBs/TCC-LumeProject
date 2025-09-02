@@ -16,16 +16,13 @@
 
 <script setup>
 import { changeToPage } from '@/router';
-
-
 </script>
 
 <style lang="scss">
 /*{
     border: solid 1px green;
 }*/
-:root{
-}
+
 .container{
     width: 100%;
     height: 100vh;

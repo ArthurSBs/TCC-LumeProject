@@ -14,7 +14,7 @@
                 <p class="subtext">Já possui uma conta? <span class="link hl-text-blue" @click="goToLogin">Entrar</span>.</p>
 
                 <div class="btn-container center-align">
-                    <button type="submit" class="link submit-btn">Cadastrar</button>
+                    <button type="submit" class="link submit-btn" @click="changeToPage('Dashboard')">Cadastrar</button>
                 </div>
             </form>
         </div>

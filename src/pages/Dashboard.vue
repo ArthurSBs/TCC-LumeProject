@@ -1,16 +1,11 @@
-<script>
-import Background from '../components/Background'
+<script setup>
+import Sidebar from '@/components/menus/Sidebar.vue';
 
-export default {
-    
-}
 </script>
 
 <template>
-    <Background/>
-    <div></div>
+    <Sidebar/>
 </template>
 
 <style lang="scss">
-    
 </style>

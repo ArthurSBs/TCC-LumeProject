@@ -13,7 +13,6 @@ const switchMenu = (menuName) => {
 </script>
 
 <template>
-    <Background/>
     <main>
         <component :is=menuId @change-view="switchMenu"/>
     </main>

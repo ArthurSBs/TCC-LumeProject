@@ -6,10 +6,8 @@
 </script>
 
 <style lang="scss">
-
-
 .bkg{
-    position: absolute;
+    position: fixed;
 
     z-index: -1;
 
@@ -19,5 +17,4 @@
     background: var(--main-color);
     background: linear-gradient(150deg, var(--top-grad) -50%, var(--main-color) 50%, var(--bot-grad) 150%);
 }
-
 </style>
