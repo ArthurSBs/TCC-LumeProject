@@ -7,14 +7,19 @@ import Sidebar from '@/components/menus/Sidebar.vue';
     <div class="layout">
         <Sidebar/>
         <div class="sections-container">
-            <div class="section-top">
+            <div class="menu-section">
                 <div class="merda"></div>
             </div>
-            <div class="section-top">
+            <div class="menu-section">
+                <div class="merda"></div>
+            </div>
+            <div class="menu-section">
+                <div class="merda"></div>
+            </div>
+            <div class="menu-section">
                 <div class="merda"></div>
             </div>
         </div>
-        
     </div>
 </template>
 
@@ -30,14 +35,19 @@ import Sidebar from '@/components/menus/Sidebar.vue';
 .sections-container{
     display: flex;
     flex-direction: column; // stack sections vertically
+
+    padding-top: 15px;
+
     gap: 15px;
 }
 
-.section-top{
+.menu-section{
     width: 100%;
     border: solid 1px green;
 
     display: flex;
+    
+    gap: 15px;
 }
 
 .merda{
