@@ -18,7 +18,7 @@ const switchMenu = (menuName) => {
     </main>
 </template>
 
-<style lang="scss">
+<style scoped lang="scss">
 main{
     display: flex;
     justify-content: center;

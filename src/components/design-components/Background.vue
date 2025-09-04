@@ -5,7 +5,7 @@
 <script setup>
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 .bkg{
     position: fixed;
 

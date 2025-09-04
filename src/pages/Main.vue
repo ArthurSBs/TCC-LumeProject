@@ -18,7 +18,7 @@
 import { changeToPage } from '@/router';
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 /*{
     border: solid 1px green;
 }*/

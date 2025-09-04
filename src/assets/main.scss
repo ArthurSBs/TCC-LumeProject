@@ -2,6 +2,10 @@
 :root{
     --main-color: #1d1d1d;
     --text-color: #e7e7e7;
+    --scroll-color-light: #c8e1e4;
+    --scroll-light-hover: #b2c8ca;
+    --scroll-color-dark: #af7046;
+    --scroll-dark-hover: #996440;
 
     //Blue Scale
     --top-grad: #357494;
@@ -37,4 +41,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+html{
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+  width: 10px;
+}
+::-webkit-scrollbar-track{
+  background: var(--main-color);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--scroll-color-dark);
+    border-radius: 10px;
+    border: 2px solid transparent;
+
+    &:hover{
+      background-color: var(--scroll-dark-hover);
+    }
 }

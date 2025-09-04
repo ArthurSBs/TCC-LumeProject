@@ -18,10 +18,12 @@ const toggleSidebar = () => {
 
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 
 .sidebar-menu{
-    position: relative;
+    position: sticky;
+
+    top: 0;
 
     width: 10dvw;
     height: 100dvh;
