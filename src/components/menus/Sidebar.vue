@@ -35,6 +35,9 @@ const toggleSidebar = () => {
     }
 
     background-color: var(--main-color);
+
+    box-shadow: 0px 0px 10px 1px #a6b6da7a;
+
 }
 
 .sidebar{
@@ -60,7 +63,18 @@ const toggleSidebar = () => {
     color: var(--text-color);
     font-size: 30px;
     background-color: transparent;
-    border: none
+    border: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: transform 0.3s ease;
+    &:hover{
+        transition: transform 0.3s ease;
+
+        transform: scale(1.2);
+    }
 }
 
 .test{

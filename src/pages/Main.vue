@@ -96,6 +96,14 @@ import { changeToPage } from '@/router';
         color: var(--text-color);
         border: none;
         cursor: pointer;
+
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        &:hover{
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+            transform: scale(1.05);
+            box-shadow: inset 0px 0px 6.9px 4px #ffffff52;
+        }
     }
    }
 }

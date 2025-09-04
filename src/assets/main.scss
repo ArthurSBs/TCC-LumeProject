@@ -2,21 +2,22 @@
 :root{
     --main-color: #1d1d1d;
     --text-color: #e7e7e7;
-    --scroll-color-light: #c8e1e4;
-    --scroll-light-hover: #b2c8ca;
-    --scroll-color-dark: #af7046;
-    --scroll-dark-hover: #996440;
+    --card-color: #313131;
 
     //Blue Scale
     --top-grad: #357494;
     --hl-text-blue: #4192da;
     --btn-color-blue: #74a3cd;
     --main-blue-secondary: #32405a;
+    --scroll-color-light: #c8e1e4;
+    --scroll-light-hover: #b2c8ca;
 
     //Orange Scale
     --bot-grad: #94693e;
     --main-orange-secondary: #d17d33;
     --hl-text-orange: #da8641;
+    --scroll-color-dark: #af7046;
+    --scroll-dark-hover: #996440;
   }
 
 *{
