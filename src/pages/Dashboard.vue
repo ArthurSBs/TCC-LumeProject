@@ -139,7 +139,7 @@ onBeforeUnmount(() => {
         //border: solid 1px green;
 
         width: 100%;
-        height: 35%;
+        height: 45%;
 
         display: flex;
         justify-content: center;
@@ -190,7 +190,7 @@ onBeforeUnmount(() => {
         align-items: left;
 
         width: 100%;
-        height: 62%;
+        height: 50%;
 
         padding-left: 2dvw;
     }
@@ -288,6 +288,14 @@ onBeforeUnmount(() => {
         min-height: 12.5%;
         
         flex-shrink: 0;
+
+        transition: box-shadow 0.3s ease, transform 0.3s ease;
+        &:hover{
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+            transform: scale(1.005);
+            box-shadow: inset 0px 0px 6.9px 4px #ffffff25;
+        }
     }
 
     ::-webkit-scrollbar{
