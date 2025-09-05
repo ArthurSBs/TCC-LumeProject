@@ -49,7 +49,7 @@ onBeforeUnmount(() => {
                         <p>Nome: Arthur S. Barbosa</p>
                         <p>Sala: 3DS</p>
                         <p>Rank: #67</p>
-                        <p>Email: arthur@etec.sp.gov.br</p>
+                        <p class="info-email link copy-text">Email: <span class="text-summarize">arthur.barbosa27</span>@etec.sp.gov.br</p>
                     </div>
                 </BlankMenu>
                 
@@ -98,6 +98,15 @@ onBeforeUnmount(() => {
 
 .on-top{
     z-index: 5;
+}
+
+.text-summarize{
+    display: inline-block;
+    max-width: 30%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
 }
 
 .layout{
@@ -189,10 +198,14 @@ onBeforeUnmount(() => {
         justify-content: space-evenly;
         align-items: left;
 
-        width: 100%;
+        max-width: 100%;
         height: 50%;
 
-        padding-left: 2dvw;
+        padding-left: 1.5dvw;
+
+
+        white-space: nowrap;
+        overflow: hidden;
     }
 }
 
@@ -306,12 +319,12 @@ onBeforeUnmount(() => {
         background: var(--main-color);
     }
     ::-webkit-scrollbar-thumb{
-        background-color: var(--scroll-color-light);
+        background-color: var(--scroll-color-dark);
         border-radius: 10px;
         border: 2px solid transparent;
 
         &:hover{
-        background-color: var(--scroll-light-hover);
+        background-color: var(--scroll-dark-hover);
         }
     }
 }
