@@ -103,10 +103,28 @@ onBeforeUnmount(() => {
 .text-summarize{
     display: inline-block;
     max-width: 30%;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    overflow-x: auto;   
     white-space: nowrap;
     vertical-align: bottom;
+
+    transform: translateY(17.5%);
+
+    &::-webkit-scrollbar{
+        height: 5px;
+    }
+    &::-webkit-scrollbar-track{
+        height: 5px;
+        background: var(--main-color);
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: var(--scroll-color-dark);
+        border-radius: 10px;
+        border: 2px solid transparent;
+
+        &:hover{
+            background-color: var(--scroll-dark-hover);
+        }
+    }
 }
 
 .layout{

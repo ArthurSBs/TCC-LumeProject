@@ -1,9 +1,9 @@
 <template>
     <div :class="['sidebar-menu', { collapsed: isCollapsed }]">
-        <div class="collapse-container">
-            <button class="toggle-sidebar link" @click="toggleSidebar">{{ isCollapsed ? '->' : '<-' }}</button> 
-        </div>
-        <nav v-if="!isCollapsed" class="sidebar"><p></p></nav>
+        <nav v-if="!isCollapsed" :class="['sidebar', { collapsedside: isCollapsed }]"><h1>MERDA</h1></nav>
+    </div>
+    <div class="collapse-container">
+        <button class="toggle-sidebar link" @click="toggleSidebar">{{ isCollapsed ? '->' : '<-' }}</button> 
     </div>
 </template>
 
@@ -38,18 +38,36 @@ const toggleSidebar = () => {
 
     box-shadow: 0px 0px 10px 1px #a6b6da7a;
 
-}
+    .sidebar{
 
-.sidebar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+        height: 100dvh;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        z-index: 1;
+
+        color: var(--text-color);
+
+        transition: width 0.5s ease, transform 0.3s ease;
+        &.collapsedside{
+            transition: width 0.5s ease, transform 0.3s ease;
+            width: 0%;
+        }
+    }
 }
 
 .collapse-container{
+    top: 0;
+    
+    position: sticky;
+
     height: 100dvh;
 
-    padding-left: 40px;
+    padding-left: .2rem;
 
     display: flex;
     justify-content: right;
